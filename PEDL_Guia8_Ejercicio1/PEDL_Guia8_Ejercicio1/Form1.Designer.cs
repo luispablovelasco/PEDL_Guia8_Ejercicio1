@@ -35,20 +35,16 @@
             this.txtpalabra = new System.Windows.Forms.TextBox();
             this.txtdefinicion = new System.Windows.Forms.TextBox();
             this.btnsave = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtbuscador = new System.Windows.Forms.TextBox();
             this.btnsearch = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txteliminar = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lbxregistros = new System.Windows.Forms.ListBox();
             this.btndelete = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -117,52 +113,31 @@
             this.btnsave.UseVisualStyleBackColor = true;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnsearch);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.txteliminar);
-            this.groupBox2.Location = new System.Drawing.Point(391, 69);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(352, 113);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Buscar definición";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Eliminar:";
-            // 
             // txtbuscador
             // 
             this.txtbuscador.Location = new System.Drawing.Point(71, 35);
             this.txtbuscador.Name = "txtbuscador";
-            this.txtbuscador.Size = new System.Drawing.Size(323, 20);
+            this.txtbuscador.Size = new System.Drawing.Size(279, 20);
             this.txtbuscador.TabIndex = 5;
             // 
             // btnsearch
             // 
-            this.btnsearch.Location = new System.Drawing.Point(127, 65);
+            this.btnsearch.Location = new System.Drawing.Point(136, 87);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(110, 34);
             this.btnsearch.TabIndex = 5;
             this.btnsearch.Text = "Eliminar";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.btnsearch);
             this.groupBox3.Controls.Add(this.txtbuscador);
-            this.groupBox3.Controls.Add(this.btndelete);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Location = new System.Drawing.Point(12, 235);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(731, 81);
+            this.groupBox3.Size = new System.Drawing.Size(373, 129);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Eliminar definición";
@@ -176,68 +151,52 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Buscar:";
             // 
-            // txteliminar
+            // groupBox4
             // 
-            this.txteliminar.Location = new System.Drawing.Point(68, 31);
-            this.txteliminar.Name = "txteliminar";
-            this.txteliminar.Size = new System.Drawing.Size(264, 20);
-            this.txteliminar.TabIndex = 5;
+            this.groupBox4.Controls.Add(this.btndelete);
+            this.groupBox4.Controls.Add(this.lbxregistros);
+            this.groupBox4.Location = new System.Drawing.Point(391, 69);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(352, 295);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Registros";
+            // 
+            // lbxregistros
+            // 
+            this.lbxregistros.FormattingEnabled = true;
+            this.lbxregistros.Location = new System.Drawing.Point(19, 19);
+            this.lbxregistros.Name = "lbxregistros";
+            this.lbxregistros.Size = new System.Drawing.Size(313, 212);
+            this.lbxregistros.TabIndex = 0;
+            this.lbxregistros.Click += new System.EventHandler(this.lbxregistros_Click);
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(415, 24);
+            this.btndelete.Location = new System.Drawing.Point(19, 247);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(133, 40);
             this.btndelete.TabIndex = 5;
-            this.btndelete.Text = "Buscar";
+            this.btndelete.Text = "Eliminar";
             this.btndelete.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(566, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 40);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Ver registros";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(515, 195);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Programa hecho por:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(480, 216);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 13);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Luis Pablo Velasco Flores VF202313";
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 328);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(755, 376);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,17 +211,13 @@
         private System.Windows.Forms.TextBox txtpalabra;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnsearch;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txteliminar;
         private System.Windows.Forms.TextBox txtbuscador;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ListBox lbxregistros;
+        private System.Windows.Forms.Button btndelete;
     }
 }
 
